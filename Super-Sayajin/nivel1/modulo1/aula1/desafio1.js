@@ -2,7 +2,6 @@ const add = ( x ) => ( y ) => x + y
 
 const divide = ( x ) => ( y ) => {
 
-    let result = 0
     let multiplyfor10 = 0;
     const multiply10 = add(10)
     const decrement1 = add(-1)
