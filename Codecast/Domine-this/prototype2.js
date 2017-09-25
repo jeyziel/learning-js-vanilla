@@ -3,14 +3,6 @@ function Pessoa( nome, idade ) {
 	this.nome = nome,
 	this.idade = idade || 1
 
-	// this.falar = function( palavras ) {
-	// 	console.log( this.nome + ' diz ' + palavras)
-	// },
-
-	// this.envelhecer = function( anos ) {
-	// 	this.idade += anos || 1
-	// 	console.log(this)
-	// }
 }
 
 Pessoa.prototype.falar = function( palavras ) {
@@ -25,7 +17,7 @@ function Homem( nome, idade ) {
 	this.sexo = 'masculino'
 }
 
-Homem.prototype = Pessoa.prototype
+Homem.prototype = new Pessoa(); //herda sem referencia o mesmo endereco de pessoa
 Homem.prototype.caminhar = function( passos ) {
 	console.log( this.nome + ' caminho ' + passos + ' passos ')
 }
@@ -34,9 +26,12 @@ const jeyziel = new Homem( 'jeyziel', 18 )
 const fulana = new Pessoa('fulana',24)
 
 jeyziel.falar('merda')
-jeyziel.envelhecer()
-jeyziel.caminhar( 200 )
-fulana.caminhar( 100 )f
+console.log(jeyziel.idade);
+delete jeyziel.idade;
+console.log(jeyziel.idade)
+// jeyziel.envelhecer()
+// jeyziel.caminhar( 200 )
+//fulana.caminhar( 100 )f
 
 
 
