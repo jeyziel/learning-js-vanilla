@@ -22,4 +22,4 @@ const jeyziel = Object.assign({nome: 'jeyziel'}, caminhante, falante)
 
 pitter.correr(100)
 
-jeyziel.falou('merda')
+jeyziel.falou('merdaa')
