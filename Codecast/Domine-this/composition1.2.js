@@ -23,8 +23,6 @@ function createPessoa( nome, idade ) {
 
 const jeyziel = createPessoa( 'jeyziel gama', 18 )
 jeyziel.envelhecer()
-
-
 console.log(jeyziel.idade)
 
 

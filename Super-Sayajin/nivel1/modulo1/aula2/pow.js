@@ -30,4 +30,11 @@ const pow = ( y ) => ( x ) => {
 
 }
 
-console.log("3 ^ 3 = " +  pow( 2) ( 9) );
+const square = pow(2)
+const cubo = pow(3)
+
+console.log(cubo(2))
+
+console.log( square(5) )
+
+// console.log("3 ^ 3 = " +  pow( 2) ( 3) );

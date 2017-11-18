@@ -8,6 +8,7 @@ const protoRabbit = {
 const rabbitAssassin = Object.create( protoRabbit );
 rabbitAssassin.tipo = "assasin";
 rabbitAssassin.fala("skreee");
+rabbitAssassin.email = "gato@gmail";
 
 const jeyziel = {
 	nome : "jeyziel"
@@ -16,4 +17,6 @@ const jeyziel = {
 const sayMyName = function( person ) {
 	console.log( person.nome )
 }
-sayMyName( jeyziel )
+
+
+console.log( rabbitAssassin )
