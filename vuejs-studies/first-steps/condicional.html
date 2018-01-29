@@ -1,0 +1,22 @@
+<html lang="pt-br">
+    <head>
+    <title>FIRST STEPS</title>
+<script src="https://unpkg.com/vue"></script>
+    </head>
+    <body>
+    <div id="app">
+        <span v-if="seen">Now you seen me</span>
+    </div>
+
+<script type="text/javascript">
+
+    let app = new Vue({
+        el: '#app',
+        data: {
+            seen: true,
+        }
+    })
+
+    </script>
+    </body>
+    </html>

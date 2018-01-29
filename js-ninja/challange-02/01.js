@@ -86,7 +86,9 @@ var threeArguments = threeArguments2(2,4,3);
 console.log( withoutArguments, twoArguments, threeArguments );
 
 
+
+
+
 // Invoque a função acima utilizando todas as possibilidades
 // (com nenhum argumento, com um, com dois e com três.) 
-//Coloque um comentário de linha ao lado da função com o resultado de cada invocação.
-
+//Coloque um comentário de linha ao lado da função com o resultado de cada invocaçãooo

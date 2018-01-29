@@ -1,0 +1,32 @@
+<html lang="pt-br">
+<head>
+    <title>FIRST STEPS</title>
+    <script src="https://unpkg.com/vue"></script>
+    <meta charset="utf-8">
+</head>
+<body>
+
+<div id="app">
+    <ol>
+        <li v-for="todo in todos">
+            {{ todo.text }}
+        </li>
+    </ol>
+</div>
+
+<script type="text/javascript">
+
+    let app = new Vue({
+        el: '#app',
+        data: {
+            todos : [
+                {text : 'banama'},
+                {text : 'maça'},
+                {text : 'melancia'}
+            ]
+        }
+    })
+
+</script>
+</body>
+</html>
